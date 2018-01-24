@@ -4,10 +4,9 @@
 ##January 2018
 ##############################################################
 
-
+#PRELIMINARY PROCEDURES
 getwd()
 setwd('C:/Users/Acer/Documents/DATA SCIENCE_DOST and COURSERA/Getting and Cleaning Data/UCI HAR Dataset')
-
 
 #Read test data
 x_test <- read.table("C:/Users/Acer/Documents/DATA SCIENCE_DOST and COURSERA/Getting and Cleaning Data/UCI HAR Dataset/test/X_test.txt")
@@ -25,12 +24,7 @@ variable_names <- read.table("C:/Users/Acer/Documents/DATA SCIENCE_DOST and COUR
 #Read activity lables
 activity_labels <- read.table("C:/Users/Acer/Documents/DATA SCIENCE_DOST and COURSERA/Getting and Cleaning Data/UCI HAR Dataset/activity_labels.txt")
 
-#Use dplyr
-library(dplyr)
-
-#Use library rehape2 package
-library(reshape2)
-
+#PROGRAMMING TASKS
 # 1. Merges the training and the test sets to create one data set.
 x_traintest <- rbind(x_train, x_test)
 y_traintest <- rbind(y_train, y_test)
